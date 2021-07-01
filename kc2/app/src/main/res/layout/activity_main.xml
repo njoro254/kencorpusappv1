@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        />
+
+    <EditText
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Interviewee Name"
+        android:id="@+id/interviewee_name"
+        android:layout_below="@+id/tvname"
+
+        />
+
+    <TextView
+        android:id="@+id/tvcategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:layout_below="@+id/interviewee_name"
+        />
+
+    <Spinner
+        android:id="@+id/sp_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvcategory"
+        android:entries="@array/topics"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/tvtopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Topic"
+        android:layout_below="@+id/sp_category"
+        />
+
+    <Spinner
+        android:id="@+id/sp_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/dialect"
+        android:layout_below="@+id/tvtopic"
+
+        />
+
+
+    <Button
+        android:id="@+id/btrecordlaunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp_topic"
+        android:text="start recording..."
+
+        />
+
+</RelativeLayout>
+
